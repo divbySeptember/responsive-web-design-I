@@ -1,3 +1,483 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
+
+.container {
+	width: 1000px;
+  margin: 20px auto;
+}
+
+@media (max-width:500px) {
+  .container {
+    width: 500px;
+    margin: 0;
+
+}
+}
+
+
+/*----Nav---*/
+
+
+.container-nav{
+	margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+
+
+}
+@media (max-width:500px) {
+  .container-nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+
+
+.container-nav1{
+	margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+
+.container-nav a{
+	text-decoration: none;
+	color: grey;
+	margin-right: 20px;
+  font-size: 13px;
+  width: 100%;
+}
+
+@media (max-width:500px) {
+  .container-nav a {
+    padding: 20px 0;
+    text-align: center;
+
+  }
+}
+@media (max-width:500px) {
+  .container-nav nav a {
+    border-bottom: 1px solid black;
+
+  }
+}
+
+
+
+.container-nav nav{
+	margin-left: 62px;
+
+}
+
+@media (max-width:500px) {
+  .container-nav nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    order: 2;
+    /* align-items: center; */
+
+}
+}
+
+
+.logo{
+	width: auto;
+	height: 30px;
+	padding: auto 25%;
+
+
+}
+@media (max-width:500px) {
+  .logo{
+    height: 30px;
+    width: auto;
+    margin: 20px 35% ;
+
+
+  }
+
+}
+@media (max-width:500px) {
+  .nav-logo{
+    width: 100%;
+    border-bottom: 1px solid black;
+    /* padding: 20px auto; */
+
+
+  }
+
+}
+
+/*----hero---*/
+
+.main-hero {
+	display: flex;
+	Justify-content: space-around;
+	padding-bottom: 50px;
+	padding-top: 40px;
+	border-bottom: 1px solid black;
+	clear:both;
+
+}
+.hero-text h1{
+	font-size: 80px;
+	text-align: center;
+}
+.main-hero img {
+	width: 350px;
+	height: 350px;
+	padding:  20px auto 20px auto ;
+	margin-top: -40px;
+
+}
+
+@media (max-width: 500px) {
+  .main-hero img {
+    display: none;
+  }
+
+}
+
+.header-btn {
+	/* padding: 10px; */
+	/* display: block; */
+ 	margin: 20px 0px 30px 80px;
+	background: #fff;
+}
+
+.main-hero2, img{
+	width: 100%;
+	height: auto;
+}
+
+.main-hero2 {
+	width: 1000px;;
+	height: auto;
+	clear: both;
+	border-bottom: 1px solid black;
+}
+
+.herot{
+	width: inherit;
+	height: auto;
+}
+.herot, p{
+	text-align: left;
+	margin-bottom: 30px;
+	/* padding: 10px; */
+	/* margin: 20px; */
+}
+.container-content, img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+button {
+	width: 50%;
+	height: 35px;
+	background: #fff;
+	border: 1px solid black;
+
+}
+
+.container-hero{
+	padding: 20px 0 20px 0;
+
+}
+
+
+
+/*----top content---*/
+
+
+.top-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 0 0 ;
+	margin-bottom: 20px;
+
+}
+
+@media (max-width: 500px) {
+  .top-content {
+    flex-flow: wrap;
+
+  }
+
+}
+
+.container-content img{
+		width: 100%;
+
+}
+
+
+@media (max-width: 500px) {
+    .container-content img{
+      width: 90%;
+      /* justify-content: center; */
+    margin: 0 20px;
+    padding: 0 15px;
+    }
+
+}
+
+
+
+.line1 {
+	width: 50%;
+	margin: 20px 20px 0 0;
+
+
+}
+
+@media (max-width: 500px) {
+  .line1 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+  }
+
+}
+
+.line1 p{
+	line-height: normal;
+
+
+}
+
+
+.line2{
+	width: 50%;
+	margin: 20px 20px 0 0;
+}
+
+@media (max-width: 500px) {
+  .line2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+  }
+
+}
+
+
+.line2 p{
+	line-height: normal;
+}
+
+
+.service-content {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto 20px auto;
+	/* justify-content:  space-between; */
+}
+.con1{
+	display: flex;
+	justify-content: space-between;
+
+}
+.con2{
+	display: flex;
+	justify-content: space-between;
+
+}
+.con3{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.c0, .c1, .c2, .c3, .c4, .c5 {
+	width: 450px;
+	height: 250px;
+	background: #EAEAEA;
+	margin: 20px;
+	padding: 0 20px 0 20px;
+	border: 1px solid black;
+}
+
+h2 {
+
+	padding: 10px 0 0 0;
+	/* margin-top: 10px; */
+}
+
+p {
+	line-height: normal;
+}
+
+.learn-btn {
+	/* margin: 15px; */
+}
+.learn-btn button{
+	/* margin: 15px; */
+	width: 35%;
+	height: 15%;
+	border-radius: 5px;
+	/* margin-top: -50px; */
+}
+/*----bottom content---*/
+
+.bottom-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 0 10px 0 10px ;
+	margin: 20px 0 0 0;
+
+
+}
+
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-flow: wrap;
+    border-bottom: 1px solid black;
+
+  }
+
+}
+
+
+.bottom-line1 {
+		width: 295px;
+    margin: 20px 20px 0 0;
+
+}
+
+.bottom-line2{
+		width: 295px;
+    margin: 20px 20px 0 0;
+
+}
+
+.bottom-line3{
+		width: 295px;
+    margin: 20px 20px 0 0;
+
+
+}
+
+@media (max-width: 500px) {
+  .bottom-line1, .bottom-line2, .bottom-line3 {
+    width: 90%;
+    margin: 0 auto;
+
+
+  }
+
+}
+
+/*----- footer----*/
+
+footer {
+	padding: 20px;
+}
+.footer-section{
+	width: 300px;
+	height: auto;
+
+}
+.footer1{
+	display: flex;
+	padding-top: 20px
+
+}
+.f1{
+	border-top: 1px solid black;
+}
+
+
+.footer-contact, p {
+	font-size: 14px;
+	padding: 5px 0 0 0;
+  margin-bottom: 0;
+
+
+}
+.footer-copy  p{
+	/* padding: 10px 0 5px 0; */
+	text-align: center;
+	/* margin-top: 20px; */
+}
